@@ -299,7 +299,7 @@ var Agents = []AgentHost{
 		ID:         "universal",
 		Name:       "Universal",
 		ProjectDir: sharedProjectSkillsDir,
-		UserDir:    ".config/agents/skills",
+		UserDir:    sharedProjectSkillsDir,
 	},
 	{
 		ID:         "warp",

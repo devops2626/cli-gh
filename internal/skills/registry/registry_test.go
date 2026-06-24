@@ -126,6 +126,25 @@ func TestInstallDir(t *testing.T) {
 			wantDir: filepath.Join("/tmp/monalisa-repo", ".agents", "skills"),
 		},
 		{
+			// Issue #13494: Universal must use the shared .agents/skills dir
+			// at user scope so compliant clients (Copilot, Pi, OpenCode) pick up
+			// skills per the agentskills.io cross-client convention.
+			name:    "universal project scope",
+			hostID:  "universal",
+			scope:   ScopeProject,
+			gitRoot: "/tmp/monalisa-repo",
+			homeDir: "/home/monalisa",
+			wantDir: filepath.Join("/tmp/monalisa-repo", ".agents", "skills"),
+		},
+		{
+			name:    "universal user scope",
+			hostID:  "universal",
+			scope:   ScopeUser,
+			gitRoot: "/tmp/monalisa-repo",
+			homeDir: "/home/monalisa",
+			wantDir: filepath.Join("/home/monalisa", ".agents", "skills"),
+		},
+		{
 			name:    "project scope without git root",
 			hostID:  "github-copilot",
 			scope:   ScopeProject,
