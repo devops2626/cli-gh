@@ -1,6 +1,7 @@
 ---
-name: "🎨 Submit a design proposal"
-about: Submit a design to resolve an open issue that has both `needs-design` and `help-wanted` labels
+name: "\U0001F3A8 Submit a design proposal"
+about: Submit a design to resolve an open issue that has both `needs-design` and `help-wanted`
+  labels
 title: ''
 labels: ''
 assignees: ''
