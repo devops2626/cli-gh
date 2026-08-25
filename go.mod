@@ -4,9 +4,13 @@ go 1.26.0
 
 toolchain go1.26.7
 
-require (
+require 
 	charm.land/bubbles/v2 v2.1.1
 	charm.land/bubbletea/v2 v2.0.9
+
+	charm.land/bubbles/v2 v2.2.0
+	charm.land/bubbletea/v2 v2.0.8
+
 	charm.land/huh/v2 v2.0.3
 	charm.land/lipgloss/v2 v2.0.6
 	github.com/AlecAivazis/survey/v2 v2.3.7
@@ -62,7 +66,7 @@ require (
 	golang.org/x/sys v0.47.0
 	golang.org/x/term v0.45.0
 	golang.org/x/text v0.41.0
-	google.golang.org/grpc v1.83.0
+	google.golang.org/grpc v1.83.1
 	google.golang.org/protobuf v1.36.12
 	gopkg.in/h2non/gock.v1 v1.1.2
 	gopkg.in/yaml.v3 v3.0.1
@@ -142,7 +146,7 @@ require (
 	github.com/itchyny/timefmt-go v0.1.6 // indirect
 	github.com/jedisct1/go-minisign v0.0.0-20241212093149-d2f9f49435c7 // indirect
 	github.com/lucasb-eyer/go-colorful v1.4.1 // indirect
-	github.com/mattn/go-runewidth v0.0.24 // indirect
+	github.com/mattn/go-runewidth v0.0.27 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.27 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
